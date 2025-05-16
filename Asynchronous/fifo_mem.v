@@ -12,7 +12,7 @@ module fifo_mem #(
     input wire [DATA_WIDTH-1:0] data_in,
     input wire full,
     input wire empty,
-    output reg [DATA_WIDTH-1:0] data_out
+    output wire [DATA_WIDTH-1:0] data_out
 );
 reg [DATA_WIDTH-1:0] fifo[0:DEPTH-1];
 
